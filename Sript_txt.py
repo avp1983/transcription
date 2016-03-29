@@ -7,10 +7,12 @@ Created on Wed Mar 23 23:28:46 2016
 
 import pandas as pd
 import os
-os.chdir('C:/PythonProjects\TakeNoneScript')
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
 import re
 from shutil import copyfile
 from pydub import AudioSegment
+from pydub.utils import mediainfo
+
 
 def find_segment_list_begin(content):
     i=0
@@ -168,6 +170,7 @@ def write_output_files(StartOfFileLoc, FileNum, FirstStringRemoveFlag):
         AllDuration = 0
         OldEndTime = 0
         Sound = AudioSegment.from_mp3(CurrentInputAudioFileName)
+        original_bitrate = mediainfo(CurrentInputAudioFileName)['bit_rate']
         while CurSeg <= NumSegments-1:
             SegmentStart, SegmentEnd = get_speech_segment_range(lines, CurLoc) 
             CurText=''
@@ -194,7 +197,7 @@ def write_output_files(StartOfFileLoc, FileNum, FirstStringRemoveFlag):
             print(AllDuration, GapDuration, StartTime, EndTime, Duration)
             SegmentSound = Sound[1000*AllDuration:1000*(AllDuration + Duration)]
             TempOutputFileName = CurrentOutputAudioFileName + '(' + str(CurSeg) + ').mp3'
-            SegmentSound.export(TempOutputFileName, format="mp3")
+            SegmentSound.export(TempOutputFileName, format="mp3", bitrate=original_bitrate)
             AllDuration = AllDuration + Duration
             OldEndTime = EndTime
 
