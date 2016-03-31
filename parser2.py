@@ -61,9 +61,11 @@ class parserSAXHandler(xml.sax.ContentHandler):
     def characters(self, content):
         if self._curentTag == "Word": 
             if self._checkWordsFromList(content, self.generalTagList):
-                 self._textList[-1] += self.endTagDivider + content
-                 self._writeTxt();
+                 if len(self._textList)==0:
+                     self._textList.append(self._textSegment)
                  
+                 self._textList[-1] += self.endTagDivider + content                 
+                 self._writeTxt();                 
                  self._textList[:] = []
                  self._countFiles+=1
                  self._segmentCount = -1
@@ -98,6 +100,9 @@ class parserSAXHandler(xml.sax.ContentHandler):
         if   listCount==1:      
             TempTxtFileName = os.path.join(self.txtOutDir, self._currentFileWithoutExt()+'.txt')
             f = open(TempTxtFileName, 'w')
+            
+         
+                
             f.write(self._textList[0])
             f.close()
         elif listCount > 1:
@@ -108,6 +113,7 @@ class parserSAXHandler(xml.sax.ContentHandler):
                end = "({0}).txt".format(count)
                TempTxtFileName = os.path.join(self.txtOutDir, self._currentFileWithoutExt()+end)
                f = open(TempTxtFileName, 'w')
+            
                f.write(text)
                f.close() 
                count +=1
@@ -126,7 +132,8 @@ def main():
     fileNames = pd.read_csv('FileNames.csv')
     parseHandler = parserSAXHandler(fileNames['Name'])
     parser.setContentHandler(parseHandler)
-    parser.parse("ideal.xml")
+    parser.parse("ideal2.xml")
+    print("Finished")
 
 
 

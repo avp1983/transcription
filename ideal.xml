@@ -607,7 +607,7 @@
 <SpeechSegment>
 <Word id="548" stime="309.48" dur="0.60" conf="0.100"> female/native </Word>
 </SpeechSegment>
-</SpeechSegment>
+
 </SegmentList>
 </AudioDoc>
 

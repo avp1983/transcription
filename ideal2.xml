@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioDoc name="Joined" path="/home/tmp/web_samples/takenotetyping_1458665071037/Joined.mp3">
+<ProcList>
+<Proc name="vrbs_align.eng" version="1.3"/>
+</ProcList>
+<ChannelList>
+<Channel num="1" sigdur="4770.42" spdur="2655.49" nw="6771" tconf="0.80"/>
+</ChannelList>
+<SegmentList>
+
+<SpeechSegment ch="1" stime="301.47" etime="308.76" lang="eng" tconf="0.86">
+<Word id="534" stime="301.77" dur="0.41" conf="0.990"> request </Word>
+<Word id="535" stime="302.21" dur="0.06" conf="0.990"> a </Word>
+<Word id="536" stime="302.27" dur="0.22" conf="0.990"> new </Word>
+<Word id="537" stime="302.56" dur="0.28" conf="0.990"> boiler </Word>
+<Word id="538" stime="302.87" dur="0.12" conf="0.990"> to </Word>
+<Word id="539" stime="302.99" dur="0.14" conf="0.990"> be </Word>
+<Word id="540" stime="303.26" dur="0.34" conf="0.990"> fitted </Word>
+<Word id="541" stime="303.94" dur="0.24" conf="0.100"> [hesitation] </Word>
+<Word id="542" stime="304.21" dur="0.12" conf="0.990"> i </Word>
+<Word id="543" stime="304.33" dur="0.25" conf="0.990"> can't </Word>
+<Word id="544" stime="304.58" dur="0.65" conf="0.990"> continually </Word>
+<Word id="545" stime="305.23" dur="0.19" conf="0.990"> have </Word>
+<Word id="546" stime="305.47" dur="0.23" conf="0.990"> this </Word>
+<Word id="547" stime="305.98" dur="2.48" conf="0.100"> (()) </Word>
+</SpeechSegment>
+<SpeechSegment ch="1" stime="309.18" etime="314.61" lang="eng" tconf="0.61">
+<Word id="548" stime="309.48" dur="0.60" conf="0.100"> female/native </Word>
+<Word id="549" stime="310.25" dur="0.39" conf="0.990"> polite </Word>
+<Word id="550" stime="311.37" dur="0.38" conf="0.100"> [hesitation] </Word>
+<Word id="551" stime="311.83" dur="0.39" conf="0.990"> friendly </Word>
+<Word id="552" stime="312.30" dur="0.11" conf="0.990"> and </Word>
+<Word id="553" stime="312.41" dur="0.57" conf="0.990"> knowledgeable </Word>
+<Word id="554" stime="313.29" dur="1.02" conf="0.100"> female/native </Word>
+</SpeechSegment>
+<SpeechSegment ch="1" stime="317.69" etime="318.65" lang="eng" tconf="0.10">
+<Word id="555" stime="317.99" dur="0.36" conf="0.100"> [breath_mouth_noise] </Word>
+</SpeechSegment>
+<SpeechSegment ch="1" stime="321.72" etime="340.51" lang="eng" tconf="0.91">
+<Word id="556" stime="322.02" dur="0.30" conf="0.990"> very </Word>
+<Word id="557" stime="322.32" dur="0.55" conf="0.990"> helpful </Word>
+<Word id="558" stime="323.33" dur="0.36" conf="0.990"> very </Word>
+<Word id="559" stime="323.79" dur="0.34" conf="0.990"> clear </Word>
+<Word id="560" stime="324.30" dur="0.82" conf="0.990"> advice </Word>
+<Word id="561" stime="325.78" dur="0.62" conf="0.990"> several </Word>
+<Word id="562" stime="326.76" dur="0.32" conf="0.100"> [hesitation] </Word>
+<Word id="563" stime="327.22" dur="0.38" conf="0.990"> offers </Word>
+<Word id="564" stime="327.70" dur="0.46" conf="0.990"> made </Word>
+<Word id="565" stime="328.35" dur="0.29" conf="0.990"> which </Word>
+<Word id="566" stime="328.64" dur="0.56" conf="0.100"> [hesitation] </Word>
+<Word id="567" stime="329.20" dur="0.25" conf="0.990"> we </Word>
+<Word id="568" stime="329.50" dur="0.18" conf="0.990"> didn't </Word>
+<Word id="569" stime="329.68" dur="0.36" conf="0.990"> actually </Word>
+<Word id="570" stime="330.04" dur="0.39" conf="0.990"> need </Word>
+<Word id="571" stime="331.08" dur="0.20" conf="0.990"> but </Word>
+<Word id="572" stime="331.85" dur="0.18" conf="0.990"> very </Word>
+<Word id="573" stime="332.03" dur="0.53" conf="0.990"> pleasant </Word>
+<Word id="574" stime="332.85" dur="0.47" conf="0.990"> and </Word>
+<Word id="575" stime="333.32" dur="0.80" conf="0.100"> [hesitation] </Word>
+<Word id="576" stime="334.77" dur="0.31" conf="0.990"> very </Word>
+<Word id="577" stime="335.08" dur="0.58" conf="0.990"> helpful </Word>
+<Word id="578" stime="336.18" dur="0.24" conf="0.990"> with </Word>
+<Word id="579" stime="336.48" dur="0.10" conf="0.990"> the </Word>
+<Word id="580" stime="336.61" dur="0.60" conf="0.990"> issue </Word>
+<Word id="581" stime="337.58" dur="0.56" conf="0.990"> concerning </Word>
+<Word id="582" stime="338.28" dur="0.24" conf="0.990"> free </Word>
+<Word id="583" stime="338.52" dur="0.44" conf="0.990"> guide </Word>
+<Word id="584" stime="339.30" dur="0.26" conf="0.990"> thank </Word>
+<Word id="585" stime="339.56" dur="0.08" conf="0.990"> you </Word>
+<Word id="586" stime="339.64" dur="0.21" conf="0.990"> very </Word>
+<Word id="587" stime="339.85" dur="0.36" conf="0.990"> much </Word>
+<Word id="588" stime="345.33" dur="0.14" conf="0.210"> male/native </Word>
+</SpeechSegment>
+
+</SegmentList>
+</AudioDoc>
+
