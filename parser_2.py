@@ -37,8 +37,13 @@ def findSilence(segment):
     if len(silenceSegmentsList)==0:
          log('not found silence segments with min_silence_len={0} and silence_thresh={1}'.format(minSilenceLen,silenceThresh))
          return 0
-    return   (silenceSegmentsList[-1][0]+silenceSegmentsList[-1][0])//2
+    return   (silenceSegmentsList[-1][0]+silenceSegmentsList[-1][1])//2
      
+
+def getFileName( fileName=''):
+    fileName = os.path.basename(fileName)
+    return trimExt(fileName)
+
 def trimExt( fileName=''):
     return    os.path.splitext(fileName)[0] 
     
@@ -64,11 +69,12 @@ def cutMp3(inFile,outDir):
      begin = 0
      while timeLeft >= minSoundLen:
          cut = findSilence(sound[begin+fr:begin+to])
-         soundToWrite = sound[begin:cut]
+         soundToWrite = sound[begin:begin+cut]
          soundLeft = sound[cut+1:soundLen]         
-         TempOutputFileName = '{0}({1}).mp3'.format(trimExt(inFile),count)
+         TempOutputFileName = '{0}({1})_{2}_{3}.mp3'.format(getFileName(inFile),count,begin,cut)
          soundToWrite.export(os.path.join(outDir,TempOutputFileName), format="mp3", bitrate=original_bitrate)
          begin = cut+1
+         count+=1
          timeLeft = len(soundLeft) 
         
 
@@ -78,5 +84,6 @@ def main():
     outDir=r'Output_audio'
    
     cutMp3(inFile, outDir)
+    print('ОК')
 
 main()    
