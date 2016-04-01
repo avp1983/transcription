@@ -1,25 +1,65 @@
-Begin work with file Input_audio\2af9a4f1-0071-47da-91ad-22c2a024e443.mp3
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(1).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(2).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(3).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(4).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(5).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(6).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(7).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(8).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(9).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(10).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(11).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(12).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(13).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(14).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(15).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(16).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(17).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(18).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(19).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(20).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(21).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(22).mp3"
-    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(23).mp3"
+    data for recording a text file has been read from xml from stime=2130.0 to (include) stime=18300.0 
+Begin work with file 0a94028e-c665-4c37-ac72-b40ae830aa97.mp3
+    write file "0a94028e-c665-4c37-ac72-b40ae830aa97(1)_0_8649.mp3"
+    write file "0a94028e-c665-4c37-ac72-b40ae830aa97(2)_8650_15267.mp3"
+    write file "0a94028e-c665-4c37-ac72-b40ae830aa97(3)_15268_21490.mp3"
     cut OK
+    Res before={'to': 8649, 'file': '0a94028e-c665-4c37-ac72-b40ae830aa97(1)_0_8649.mp3', 'text': '', 'from': 0}
+     from=0;to=8649;_countMs=0;
+    Res after={'to': 8649, 'file': '0a94028e-c665-4c37-ac72-b40ae830aa97(1)_0_8649.mp3', 'text': " i'm extremely happy with anne who helped me because i couldn't sign in to do the clubcard deals", 'from': 0}
+    Res before={'to': 15267, 'file': '0a94028e-c665-4c37-ac72-b40ae830aa97(2)_8650_15267.mp3', 'text': '', 'from': 8650}
+     from=8650;to=15267;_countMs=0;
+    Res after={'to': 15267, 'file': '0a94028e-c665-4c37-ac72-b40ae830aa97(2)_8650_15267.mp3', 'text': " it just wouldn't let me i'd been over and over again and i was getting very fed up but anne did it all for me", 'from': 8650}
+    Res before={'to': 21490, 'file': '0a94028e-c665-4c37-ac72-b40ae830aa97(3)_15268_21490.mp3', 'text': '', 'from': 15268}
+     from=15268;to=21490;_countMs=0;
+    Res after={'to': 21490, 'file': '0a94028e-c665-4c37-ac72-b40ae830aa97(3)_15268_21490.mp3', 'text': " and put it right so i'm very pleased with that so thank you very much   female/native ", 'from': 15268}
+    data for recording a text file has been read from xml from stime=26500.0 to (include) stime=44880.0 
+Begin work with file 0f57e594-09db-4642-8d9b-89cdf5e7424f.mp3
+    write file "0f57e594-09db-4642-8d9b-89cdf5e7424f(1)_0_7107.mp3"
+    write file "0f57e594-09db-4642-8d9b-89cdf5e7424f(2)_7108_15331.mp3"
+    write file "0f57e594-09db-4642-8d9b-89cdf5e7424f(3)_15332_21510.mp3"
+    cut OK
+    Res before={'to': 7107, 'file': '0f57e594-09db-4642-8d9b-89cdf5e7424f(1)_0_7107.mp3', 'text': '', 'from': 0}
+     from=21490;to=28597;_countMs=21490;
+    Res after={'to': 7107, 'file': '0f57e594-09db-4642-8d9b-89cdf5e7424f(1)_0_7107.mp3', 'text': ' the person who dealt with me was really professional', 'from': 0}
+    Res before={'to': 15331, 'file': '0f57e594-09db-4642-8d9b-89cdf5e7424f(2)_7108_15331.mp3', 'text': '', 'from': 7108}
+     from=28598;to=36821;_countMs=21490;
+    Res after={'to': 15331, 'file': '0f57e594-09db-4642-8d9b-89cdf5e7424f(2)_7108_15331.mp3', 'text': ' he helped me understand exactly what was wrong and within five minutes he had my boiler fixed and with hot water again i really', 'from': 7108}
+    Res before={'to': 21510, 'file': '0f57e594-09db-4642-8d9b-89cdf5e7424f(3)_15332_21510.mp3', 'text': '', 'from': 15332}
+     from=36822;to=43000;_countMs=21490;
+    Res after={'to': 21510, 'file': '0f57e594-09db-4642-8d9b-89cdf5e7424f(3)_15332_21510.mp3', 'text': ' appreciate him because nobody wants to not have hot water on a [hesitation] thursday morning when trying to get ready for work', 'from': 15332}
+    data for recording a text file has been read from xml from stime=50760.0 to (include) stime=52100.0 
+Begin work with file 1bdcf42e-1bdb-4058-b9e5-6ee670ec509b.mp3
+   sound is less then 10000 msec
+    No words in file!!!
+    data for recording a text file has been read from xml from stime=116420.0 to (include) stime=121330.0 
+Begin work with file 2a771726-f421-4bb0-a109-e6d272c9590e.mp3
+   sound is less then 10000 msec
+    data for recording a text file has been read from xml from stime=127620.0 to (include) stime=305980.0 
+Begin work with file 2af9a4f1-0071-47da-91ad-22c2a024e443.mp3
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(1)_0_8826.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(2)_8827_16547.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(3)_16548_24751.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(4)_24752_33574.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(5)_33575_40599.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(6)_40600_49080.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(7)_49081_57845.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(8)_57846_66575.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(9)_66576_72468.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(10)_72469_81313.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(11)_81314_89225.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(12)_89226_98104.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(13)_98105_104229.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(14)_104230_112944.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(15)_112945_121225.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(16)_121226_126725.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(17)_126726_135561.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(18)_135562_143187.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(19)_143188_151180.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(20)_151181_158567.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(21)_158568_167471.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(22)_167472_173598.mp3"
+    write file "2af9a4f1-0071-47da-91ad-22c2a024e443(23)_173599_180000.mp3"
+    cut OK
+    Res before={'to': 8826, 'file': '2af9a4f1-0071-47da-91ad-22c2a024e443(1)_0_8826.mp3', 'text': '', 'from': 0}
+     from=64490;to=73316;_countMs=64490;
