@@ -68,7 +68,56 @@ def findSegment(srcSeg, seekSeg, delta=0):
         raise Exception('invalid args')
     seekTo = lenSrcSeg-lenSeekSeg+1
     for i in range(seekTo):
-        audio_slice = srcSeg[i:i+lenSeekSeg-1]
+        audio_slice = srcSeg[i:i+lenSeekSeg]
+        if audio_slice.rms==seekSeg.rms:
+            return [i,i+lenSeekSeg]
+        #for s in audio_slice
+        #  delta_test=
+    return []
 
+def testFind():
+        '''
+    Вырезаем из joined.mp3 фрагмент и ищем по уровню сигнала этот же фрагмет в  0f57e594-09db-4642-8d9b-89cdf5e7424f.mp3
+   Характеристики joined.mp3:
+          Duration: 01:23:23.35, start: 0.138125, bitrate: 64 kb/s
+            Stream #0:0: Audio: mp3, 8000 Hz, mono, s16p, 64 kb/s
+            Metadata:
+              encoder         : LAME3.98r
+            Side data:   
+                
+   Характеристики  0f57e594-09db-4642-8d9b-89cdf5e7424f.mp3:
+    Duration: 00:00:21.74, start: 0.138125, bitrate: 64 kb/s
+    Stream #0:0: Audio: mp3, 8000 Hz, mono, s16p, 64 kb/s
+    Metadata:
+      encoder         : LAME3.98r
+    Side data:
+   Должно получиться (получается)
+    <SpeechSegment ch="1" stime="26.20" etime="45.37" lang="eng" tconf="0.91">
+<Word id="60" stime="26.50" dur="0.13" conf="0.990"> the </Word>
+<Word id="61" stime="26.63" dur="0.24" conf="0.990"> person </Word>
+<Word id="62" stime="26.93" dur="0.12" conf="0.990"> who </Word>
+<Word id="63" stime="27.05" dur="0.22" conf="0.990"> dealt </Word>
+<Word id="64" stime="27.27" dur="0.14" conf="0.990"> with </Word>
+<Word id="65" stime="27.44" dur="0.25" conf="0.990"> me </Word>
+<Word id="66" stime="27.82" dur="0.26" conf="0.990"> was </Word>
+<Word id="67" stime="28.13" dur="0.21" conf="0.990"> really </Word>
+<Word id="68" stime="28.50" dur="0.65" conf="0.990"> professional </Word>
+<Word id="69" stime="29.62" dur="0.18" conf="0.990"> he </Word>
+<Word id="70" stime="29.80" dur="0.22" conf="0.990"> helped </Word>
+    
+    '''
+    fromFile     = r'Joined.mp3' 
+    sound = AudioSegment.from_mp3(fromFile)
+    search = sound[26.50*1000:(29.80+0.22)*1000]
+    
+    seekInFile =  r'Input_audio\0f57e594-09db-4642-8d9b-89cdf5e7424f.mp3'
+    src = AudioSegment.from_mp3(seekInFile)
+    original_bitrate = mediainfo(seekInFile)['bit_rate']
+    r =findSegment(src, search )
+    e = src[r[0]:r[1]]
+    e.export(r'Output_audio\part_from_seek.mp3', format="mp3", bitrate=original_bitrate)
+    
+testFind()
+    
 #test_small()
 #test_joined()
