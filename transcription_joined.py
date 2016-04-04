@@ -90,9 +90,10 @@ class ParseHandler(xml.sax.ContentHandler):
     
 
 class Cut():
-    def __init__(self,words):
+    def __init__(self,words=[]):
         self.words = words
         self.currentMs=0
+        self.joinedSoundLen=0
         self.logFile='parser.log'
         self.audioInDir = 'Input_audio'
         self.txtOutDir = 'Output_text'
@@ -114,13 +115,14 @@ class Cut():
         
     def run(self):
         self.joinedSound = AudioSegment.from_mp3(self.pathToJoined)
+        self.joinedSoundLen=len(self.joinedSound)
         for file in self.fileNamesList:
             self.currentFile=self.trimExt(file)            
             path = os.path.join(self.audioInDir, file)
             self.processFile(path)
        
     
-    def compareSegments(self, seg1,seg2, step=200):
+    def compareSegments(self, seg1,seg2, step=100):
         seg1Len = len(seg1)
         seg2Len = len(seg2)
         if seg1Len!=seg2Len:
@@ -150,12 +152,25 @@ class Cut():
                 return [i,i+lenSeekSeg]
         return []    
     
+    def findSegment2(self,srcSeg, seekSeg, fromPos):
+        lenSrcSeg = len(srcSeg)
+        lenSeekSeg=len(seekSeg)
+        
+        if not srcSeg or not seekSeg or lenSeekSeg>lenSrcSeg:
+            raise Exception('invalid args')
+        seekTo = lenSrcSeg-lenSeekSeg+1
+        for i in range(fromPos,seekTo):
+            audio_slice = srcSeg[i:i+lenSeekSeg]
+            if self.compareSegments(audio_slice,seekSeg):
+                return [i,i+lenSeekSeg]
+        return []  
     
     def writeWords(self,fr,to):
         text=''        
-        for word in self.words:
+        for index,word in enumerate(self.words):
             if word['stime']>=fr and (word['stime']+word['dur'])<to:
                 text+=word['word']
+                del self.words[index]
         self.log('file={0}'.format(self.currentFile))
         self.log(text)
         self.log('--------------')        
@@ -166,13 +181,30 @@ class Cut():
         if not foundSeg:
             self.log('Sound from file {0} is not found in {1}'.format(path,self.pathToJoined))
             return
-            
-        self.writeWords(foundSeg[0],foundSeg[1])    
-            
+        fr,to =  foundSeg
+        #fr+=self.currentMs
+        #to+=self.currentMs
+        self.writeWords(fr,to)    
+        self.currentMs = to   
         
         
-        
-       
+def test():
+    src =  AudioSegment.from_mp3('Joined.mp3')
+    original_bitrate = mediainfo('Joined.mp3')['bit_rate']    
+    
+   # seek = AudioSegment.from_mp3(r'Input_audio\1bdcf42e-1bdb-4058-b9e5-6ee670ec509b.mp3')
+    #c = Cut()
+    #r = c.findSegment2(src, seek, int(44.88*1000))
+    #print(r)
+    src[44.00*1000:(100)*1000].export(r'Output_audio\part_from_join.mp3', format="mp3",bitrate=original_bitrate)
+
+
+def test2():
+    src= AudioSegment.from_mp3(r'Output_audio\part_from_join.mp3')
+    seek =  AudioSegment.from_mp3(r'Input_audio\1bdcf42e-1bdb-4058-b9e5-6ee670ec509b.mp3')
+    c = Cut()
+    r = c.findSegment(src, seek)
+    print(r)
 
 def main():
     parser = xml.sax.make_parser()
@@ -186,5 +218,4 @@ def main():
     c.run()
     
    
-    
-main()    
+test2()   
