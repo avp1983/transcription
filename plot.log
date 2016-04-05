@@ -1,626 +1,561 @@
-Output_audio\part_from_join.mp3
-fr=0;to=100;avr=50;rms=1682
-fr=100;to=200;avr=150;rms=1830
-fr=200;to=300;avr=250;rms=165
-fr=300;to=400;avr=350;rms=326
-fr=400;to=500;avr=450;rms=300
-fr=500;to=600;avr=550;rms=560
-fr=600;to=700;avr=650;rms=562
-fr=700;to=800;avr=750;rms=929
-fr=800;to=900;avr=850;rms=415
-fr=900;to=1000;avr=950;rms=595
-fr=1000;to=1100;avr=1050;rms=40
-fr=1100;to=1200;avr=1150;rms=42
-fr=1200;to=1300;avr=1250;rms=16
-fr=1300;to=1400;avr=1350;rms=10
-fr=1400;to=1500;avr=1450;rms=11
-fr=1500;to=1600;avr=1550;rms=12
-fr=1600;to=1700;avr=1650;rms=12
-fr=1700;to=1800;avr=1750;rms=125
-fr=1800;to=1900;avr=1850;rms=87
-fr=1900;to=2000;avr=1950;rms=90
-fr=2000;to=2100;avr=2050;rms=7
-fr=2100;to=2200;avr=2150;rms=7
-fr=2200;to=2300;avr=2250;rms=6
-fr=2300;to=2400;avr=2350;rms=0
-fr=2400;to=2500;avr=2450;rms=0
-fr=2500;to=2600;avr=2550;rms=0
-fr=2600;to=2700;avr=2650;rms=0
-fr=2700;to=2800;avr=2750;rms=0
-fr=2800;to=2900;avr=2850;rms=0
-fr=2900;to=3000;avr=2950;rms=0
-fr=3000;to=3100;avr=3050;rms=0
-fr=3100;to=3200;avr=3150;rms=0
-fr=3200;to=3300;avr=3250;rms=0
-fr=3300;to=3400;avr=3350;rms=0
-fr=3400;to=3500;avr=3450;rms=0
-fr=3500;to=3600;avr=3550;rms=0
-fr=3600;to=3700;avr=3650;rms=0
-fr=3700;to=3800;avr=3750;rms=0
-fr=3800;to=3900;avr=3850;rms=0
-fr=3900;to=4000;avr=3950;rms=0
-fr=4000;to=4100;avr=4050;rms=0
-fr=4100;to=4200;avr=4150;rms=0
-fr=4200;to=4300;avr=4250;rms=0
-fr=4300;to=4400;avr=4350;rms=0
-fr=4400;to=4500;avr=4450;rms=0
-fr=4500;to=4600;avr=4550;rms=0
-fr=4600;to=4700;avr=4650;rms=0
-fr=4700;to=4800;avr=4750;rms=0
-fr=4800;to=4900;avr=4850;rms=0
-fr=4900;to=5000;avr=4950;rms=0
-fr=5000;to=5100;avr=5050;rms=0
-fr=5100;to=5200;avr=5150;rms=0
-fr=5200;to=5300;avr=5250;rms=0
-fr=5300;to=5400;avr=5350;rms=0
-fr=5400;to=5500;avr=5450;rms=0
-fr=5500;to=5600;avr=5550;rms=7
-fr=5600;to=5700;avr=5650;rms=10
-fr=5700;to=5800;avr=5750;rms=21
-fr=5800;to=5900;avr=5850;rms=15
-fr=5900;to=6000;avr=5950;rms=13
-fr=6000;to=6100;avr=6050;rms=11
-fr=6100;to=6200;avr=6150;rms=12
-fr=6200;to=6300;avr=6250;rms=11
-fr=6300;to=6400;avr=6350;rms=20
-fr=6400;to=6500;avr=6450;rms=65
-fr=6500;to=6600;avr=6550;rms=129
-fr=6600;to=6700;avr=6650;rms=94
-fr=6700;to=6800;avr=6750;rms=51
-fr=6800;to=6900;avr=6850;rms=3616
-fr=6900;to=7000;avr=6950;rms=1606
-fr=7000;to=7100;avr=7050;rms=639
-fr=7100;to=7200;avr=7150;rms=395
-fr=7200;to=7300;avr=7250;rms=5800
-fr=7300;to=7400;avr=7350;rms=1774
-fr=7400;to=7500;avr=7450;rms=318
-fr=7500;to=7600;avr=7550;rms=291
-fr=7600;to=7700;avr=7650;rms=44
-fr=7700;to=7800;avr=7750;rms=23
-fr=7800;to=7900;avr=7850;rms=61
-fr=7900;to=8000;avr=7950;rms=534
-fr=8000;to=8100;avr=8050;rms=230
-fr=8100;to=8200;avr=8150;rms=2089
-fr=8200;to=8300;avr=8250;rms=1435
-fr=8300;to=8400;avr=8350;rms=65
-fr=8400;to=8500;avr=8450;rms=16
-fr=8500;to=8600;avr=8550;rms=13
-fr=8600;to=8700;avr=8650;rms=11
-fr=8700;to=8800;avr=8750;rms=17
-fr=8800;to=8900;avr=8850;rms=24
-fr=8900;to=9000;avr=8950;rms=21
-fr=9000;to=9100;avr=9050;rms=393
-fr=9100;to=9200;avr=9150;rms=26
-fr=9200;to=9300;avr=9250;rms=16
-fr=9300;to=9400;avr=9350;rms=310
-fr=9400;to=9500;avr=9450;rms=45
-fr=9500;to=9600;avr=9550;rms=24
-fr=9600;to=9700;avr=9650;rms=12
-fr=9700;to=9800;avr=9750;rms=16
-fr=9800;to=9900;avr=9850;rms=14
-fr=9900;to=10000;avr=9950;rms=20
-fr=10000;to=10100;avr=10050;rms=33
-fr=10100;to=10200;avr=10150;rms=16
-fr=10200;to=10300;avr=10250;rms=15
-fr=10300;to=10400;avr=10350;rms=15
-fr=10400;to=10500;avr=10450;rms=13
-fr=10500;to=10600;avr=10550;rms=575
-fr=10600;to=10700;avr=10650;rms=402
-fr=10700;to=10800;avr=10750;rms=2853
-fr=10800;to=10900;avr=10850;rms=48
-fr=10900;to=11000;avr=10950;rms=8
-fr=11000;to=11100;avr=11050;rms=2254
-fr=11100;to=11200;avr=11150;rms=24
-fr=11200;to=11300;avr=11250;rms=6
-fr=11300;to=11400;avr=11350;rms=89
-fr=11400;to=11500;avr=11450;rms=6
-fr=11500;to=11600;avr=11550;rms=7
-fr=11600;to=11700;avr=11650;rms=3
-fr=11700;to=11800;avr=11750;rms=0
-fr=11800;to=11900;avr=11850;rms=0
-fr=11900;to=12000;avr=11950;rms=0
-fr=12000;to=12100;avr=12050;rms=0
-fr=12100;to=12200;avr=12150;rms=0
-fr=12200;to=12300;avr=12250;rms=0
-fr=12300;to=12400;avr=12350;rms=0
-fr=12400;to=12500;avr=12450;rms=0
-fr=12500;to=12600;avr=12550;rms=0
-fr=12600;to=12700;avr=12650;rms=0
-fr=12700;to=12800;avr=12750;rms=0
-fr=12800;to=12900;avr=12850;rms=0
-fr=12900;to=13000;avr=12950;rms=0
-fr=13000;to=13100;avr=13050;rms=0
-fr=13100;to=13200;avr=13150;rms=0
-fr=13200;to=13300;avr=13250;rms=0
-fr=13300;to=13400;avr=13350;rms=0
-fr=13400;to=13500;avr=13450;rms=0
-fr=13500;to=13600;avr=13550;rms=0
-fr=13600;to=13700;avr=13650;rms=0
-fr=13700;to=13800;avr=13750;rms=0
-fr=13800;to=13900;avr=13850;rms=0
-fr=13900;to=14000;avr=13950;rms=0
-fr=14000;to=14100;avr=14050;rms=0
-fr=14100;to=14200;avr=14150;rms=0
-fr=14200;to=14300;avr=14250;rms=0
-fr=14300;to=14400;avr=14350;rms=0
-fr=14400;to=14500;avr=14450;rms=0
-fr=14500;to=14600;avr=14550;rms=0
-fr=14600;to=14700;avr=14650;rms=0
-fr=14700;to=14800;avr=14750;rms=0
-fr=14800;to=14900;avr=14850;rms=961
-fr=14900;to=15000;avr=14950;rms=4678
-fr=15000;to=15100;avr=15050;rms=4678
-fr=15100;to=15200;avr=15150;rms=4678
-fr=15200;to=15300;avr=15250;rms=4679
-fr=15300;to=15400;avr=15350;rms=4678
-fr=15400;to=15500;avr=15450;rms=4679
-fr=15500;to=15600;avr=15550;rms=4678
-fr=15600;to=15700;avr=15650;rms=4678
-fr=15700;to=15800;avr=15750;rms=4678
-fr=15800;to=15900;avr=15850;rms=4678
-fr=15900;to=16000;avr=15950;rms=4679
-fr=16000;to=16100;avr=16050;rms=4678
-fr=16100;to=16200;avr=16150;rms=4678
-fr=16200;to=16300;avr=16250;rms=4678
-fr=16300;to=16400;avr=16350;rms=4679
-fr=16400;to=16500;avr=16450;rms=4679
-fr=16500;to=16600;avr=16550;rms=4678
-fr=16600;to=16700;avr=16650;rms=4679
-fr=16700;to=16800;avr=16750;rms=4678
-fr=16800;to=16900;avr=16850;rms=4678
-fr=16900;to=17000;avr=16950;rms=4678
-fr=17000;to=17100;avr=17050;rms=4678
-fr=17100;to=17200;avr=17150;rms=4678
-fr=17200;to=17300;avr=17250;rms=4678
-fr=17300;to=17400;avr=17350;rms=4678
-fr=17400;to=17500;avr=17450;rms=4678
-fr=17500;to=17600;avr=17550;rms=4678
-fr=17600;to=17700;avr=17650;rms=4678
-fr=17700;to=17800;avr=17750;rms=4679
-fr=17800;to=17900;avr=17850;rms=4678
-fr=17900;to=18000;avr=17950;rms=4678
-fr=18000;to=18100;avr=18050;rms=4678
-fr=18100;to=18200;avr=18150;rms=4678
-fr=18200;to=18300;avr=18250;rms=4678
-fr=18300;to=18400;avr=18350;rms=4678
-fr=18400;to=18500;avr=18450;rms=4679
-fr=18500;to=18600;avr=18550;rms=4678
-fr=18600;to=18700;avr=18650;rms=4678
-fr=18700;to=18800;avr=18750;rms=4678
-fr=18800;to=18900;avr=18850;rms=4679
-fr=18900;to=19000;avr=18950;rms=4678
-fr=19000;to=19100;avr=19050;rms=4678
-fr=19100;to=19200;avr=19150;rms=4678
-fr=19200;to=19300;avr=19250;rms=4678
-fr=19300;to=19400;avr=19350;rms=4678
-fr=19400;to=19500;avr=19450;rms=4678
-fr=19500;to=19600;avr=19550;rms=4679
-fr=19600;to=19700;avr=19650;rms=4678
-fr=19700;to=19800;avr=19750;rms=4678
-fr=19800;to=19900;avr=19850;rms=4679
-fr=19900;to=20000;avr=19950;rms=4678
-fr=20000;to=20100;avr=20050;rms=4678
-fr=20100;to=20200;avr=20150;rms=4678
-fr=20200;to=20300;avr=20250;rms=4679
-fr=20300;to=20400;avr=20350;rms=4679
-fr=20400;to=20500;avr=20450;rms=4678
-fr=20500;to=20600;avr=20550;rms=4678
-fr=20600;to=20700;avr=20650;rms=4679
-fr=20700;to=20800;avr=20750;rms=4678
-fr=20800;to=20900;avr=20850;rms=4678
-fr=20900;to=21000;avr=20950;rms=4678
-fr=21000;to=21100;avr=21050;rms=4678
-fr=21100;to=21200;avr=21150;rms=4678
-fr=21200;to=21300;avr=21250;rms=4678
-fr=21300;to=21400;avr=21350;rms=4679
-fr=21400;to=21500;avr=21450;rms=4678
-fr=21500;to=21600;avr=21550;rms=4678
-fr=21600;to=21700;avr=21650;rms=4678
-fr=21700;to=21800;avr=21750;rms=4678
-fr=21800;to=21900;avr=21850;rms=4679
-fr=21900;to=22000;avr=21950;rms=4678
-fr=22000;to=22100;avr=22050;rms=4678
-fr=22100;to=22200;avr=22150;rms=4678
-fr=22200;to=22300;avr=22250;rms=4678
-fr=22300;to=22400;avr=22350;rms=4678
-fr=22400;to=22500;avr=22450;rms=4678
-fr=22500;to=22600;avr=22550;rms=4678
-fr=22600;to=22700;avr=22650;rms=4678
-fr=22700;to=22800;avr=22750;rms=4678
-fr=22800;to=22900;avr=22850;rms=4678
-fr=22900;to=23000;avr=22950;rms=4678
-fr=23000;to=23100;avr=23050;rms=4678
-fr=23100;to=23200;avr=23150;rms=4679
-fr=23200;to=23300;avr=23250;rms=4679
-fr=23300;to=23400;avr=23350;rms=4678
-fr=23400;to=23500;avr=23450;rms=4678
-fr=23500;to=23600;avr=23550;rms=4678
-fr=23600;to=23700;avr=23650;rms=4678
-fr=23700;to=23800;avr=23750;rms=4678
-fr=23800;to=23900;avr=23850;rms=4678
-fr=23900;to=24000;avr=23950;rms=4678
-fr=24000;to=24100;avr=24050;rms=4678
-fr=24100;to=24200;avr=24150;rms=4678
-fr=24200;to=24300;avr=24250;rms=4678
-fr=24300;to=24400;avr=24350;rms=4679
-fr=24400;to=24500;avr=24450;rms=4678
-fr=24500;to=24600;avr=24550;rms=4679
-fr=24600;to=24700;avr=24650;rms=4678
-fr=24700;to=24800;avr=24750;rms=4678
-fr=24800;to=24900;avr=24850;rms=4678
-fr=24900;to=25000;avr=24950;rms=4679
-fr=25000;to=25100;avr=25050;rms=4679
-fr=25100;to=25200;avr=25150;rms=4678
-fr=25200;to=25300;avr=25250;rms=4678
-fr=25300;to=25400;avr=25350;rms=4678
-fr=25400;to=25500;avr=25450;rms=4678
-fr=25500;to=25600;avr=25550;rms=4678
-fr=25600;to=25700;avr=25650;rms=4678
-fr=25700;to=25800;avr=25750;rms=4678
-fr=25800;to=25900;avr=25850;rms=4678
-fr=25900;to=26000;avr=25950;rms=4678
-fr=26000;to=26100;avr=26050;rms=4679
-fr=26100;to=26200;avr=26150;rms=4678
-fr=26200;to=26300;avr=26250;rms=4678
-fr=26300;to=26400;avr=26350;rms=4678
-fr=26400;to=26500;avr=26450;rms=4678
-fr=26500;to=26600;avr=26550;rms=4678
-fr=26600;to=26700;avr=26650;rms=4678
-fr=26700;to=26800;avr=26750;rms=4679
-fr=26800;to=26900;avr=26850;rms=4678
-fr=26900;to=27000;avr=26950;rms=4678
-fr=27000;to=27100;avr=27050;rms=4678
-fr=27100;to=27200;avr=27150;rms=4678
-fr=27200;to=27300;avr=27250;rms=4678
-fr=27300;to=27400;avr=27350;rms=4678
-fr=27400;to=27500;avr=27450;rms=4678
-fr=27500;to=27600;avr=27550;rms=4678
-fr=27600;to=27700;avr=27650;rms=4678
-fr=27700;to=27800;avr=27750;rms=4678
-fr=27800;to=27900;avr=27850;rms=4679
-fr=27900;to=28000;avr=27950;rms=4678
-fr=28000;to=28100;avr=28050;rms=4678
-fr=28100;to=28200;avr=28150;rms=4678
-fr=28200;to=28300;avr=28250;rms=4678
-fr=28300;to=28400;avr=28350;rms=4678
-fr=28400;to=28500;avr=28450;rms=4678
-fr=28500;to=28600;avr=28550;rms=4679
-fr=28600;to=28700;avr=28650;rms=4678
-fr=28700;to=28800;avr=28750;rms=4678
-fr=28800;to=28900;avr=28850;rms=4678
-fr=28900;to=29000;avr=28950;rms=4678
-fr=29000;to=29100;avr=29050;rms=4678
-fr=29100;to=29200;avr=29150;rms=4678
-fr=29200;to=29300;avr=29250;rms=4679
-fr=29300;to=29400;avr=29350;rms=4678
-fr=29400;to=29500;avr=29450;rms=4678
-fr=29500;to=29600;avr=29550;rms=4678
-fr=29600;to=29700;avr=29650;rms=4679
-fr=29700;to=29800;avr=29750;rms=4678
-fr=29800;to=29900;avr=29850;rms=4678
-fr=29900;to=30000;avr=29950;rms=4678
-fr=30000;to=30100;avr=30050;rms=4678
-fr=30100;to=30200;avr=30150;rms=4678
-fr=30200;to=30300;avr=30250;rms=4678
-fr=30300;to=30400;avr=30350;rms=4678
-fr=30400;to=30500;avr=30450;rms=4678
-fr=30500;to=30600;avr=30550;rms=4678
-fr=30600;to=30700;avr=30650;rms=4678
-fr=30700;to=30800;avr=30750;rms=4678
-fr=30800;to=30900;avr=30850;rms=4678
-fr=30900;to=31000;avr=30950;rms=4678
-fr=31000;to=31100;avr=31050;rms=4678
-fr=31100;to=31200;avr=31150;rms=4678
-fr=31200;to=31300;avr=31250;rms=4679
-fr=31300;to=31400;avr=31350;rms=4678
-fr=31400;to=31500;avr=31450;rms=4679
-fr=31500;to=31600;avr=31550;rms=4678
-fr=31600;to=31700;avr=31650;rms=4678
-fr=31700;to=31800;avr=31750;rms=4678
-fr=31800;to=31900;avr=31850;rms=4678
-fr=31900;to=32000;avr=31950;rms=4678
-fr=32000;to=32100;avr=32050;rms=4678
-fr=32100;to=32200;avr=32150;rms=4678
-fr=32200;to=32300;avr=32250;rms=4679
-fr=32300;to=32400;avr=32350;rms=4678
-fr=32400;to=32500;avr=32450;rms=4679
-fr=32500;to=32600;avr=32550;rms=4678
-fr=32600;to=32700;avr=32650;rms=4678
-fr=32700;to=32800;avr=32750;rms=4678
-fr=32800;to=32900;avr=32850;rms=4679
-fr=32900;to=33000;avr=32950;rms=4678
-fr=33000;to=33100;avr=33050;rms=4678
-fr=33100;to=33200;avr=33150;rms=4678
-fr=33200;to=33300;avr=33250;rms=4679
-fr=33300;to=33400;avr=33350;rms=4678
-fr=33400;to=33500;avr=33450;rms=4678
-fr=33500;to=33600;avr=33550;rms=4678
-fr=33600;to=33700;avr=33650;rms=4678
-fr=33700;to=33800;avr=33750;rms=4678
-fr=33800;to=33900;avr=33850;rms=4678
-fr=33900;to=34000;avr=33950;rms=4679
-fr=34000;to=34100;avr=34050;rms=4678
-fr=34100;to=34200;avr=34150;rms=4678
-fr=34200;to=34300;avr=34250;rms=4678
-fr=34300;to=34400;avr=34350;rms=4678
-fr=34400;to=34500;avr=34450;rms=4678
-fr=34500;to=34600;avr=34550;rms=4678
-fr=34600;to=34700;avr=34650;rms=4678
-fr=34700;to=34800;avr=34750;rms=4678
-fr=34800;to=34900;avr=34850;rms=4678
-fr=34900;to=35000;avr=34950;rms=4678
-fr=35000;to=35100;avr=35050;rms=4679
-fr=35100;to=35200;avr=35150;rms=4678
-fr=35200;to=35300;avr=35250;rms=4678
-fr=35300;to=35400;avr=35350;rms=4678
-fr=35400;to=35500;avr=35450;rms=4678
-fr=35500;to=35600;avr=35550;rms=4678
-fr=35600;to=35700;avr=35650;rms=4678
-fr=35700;to=35800;avr=35750;rms=4679
-fr=35800;to=35900;avr=35850;rms=4678
-fr=35900;to=36000;avr=35950;rms=4678
-fr=36000;to=36100;avr=36050;rms=4678
-fr=36100;to=36200;avr=36150;rms=4678
-fr=36200;to=36300;avr=36250;rms=4678
-fr=36300;to=36400;avr=36350;rms=4678
-fr=36400;to=36500;avr=36450;rms=4678
-fr=36500;to=36600;avr=36550;rms=4678
-fr=36600;to=36700;avr=36650;rms=4678
-fr=36700;to=36800;avr=36750;rms=4678
-fr=36800;to=36900;avr=36850;rms=4679
-fr=36900;to=37000;avr=36950;rms=4678
-fr=37000;to=37100;avr=37050;rms=4678
-fr=37100;to=37200;avr=37150;rms=4679
-fr=37200;to=37300;avr=37250;rms=4678
-fr=37300;to=37400;avr=37350;rms=4678
-fr=37400;to=37500;avr=37450;rms=4678
-fr=37500;to=37600;avr=37550;rms=4679
-fr=37600;to=37700;avr=37650;rms=4679
-fr=37700;to=37800;avr=37750;rms=4678
-fr=37800;to=37900;avr=37850;rms=4678
-fr=37900;to=38000;avr=37950;rms=4679
-fr=38000;to=38100;avr=38050;rms=4678
-fr=38100;to=38200;avr=38150;rms=4678
-fr=38200;to=38300;avr=38250;rms=4678
-fr=38300;to=38400;avr=38350;rms=4679
-fr=38400;to=38500;avr=38450;rms=4678
-fr=38500;to=38600;avr=38550;rms=4678
-fr=38600;to=38700;avr=38650;rms=4679
-fr=38700;to=38800;avr=38750;rms=4678
-fr=38800;to=38900;avr=38850;rms=4678
-fr=38900;to=39000;avr=38950;rms=4678
-fr=39000;to=39100;avr=39050;rms=4678
-fr=39100;to=39200;avr=39150;rms=4678
-fr=39200;to=39300;avr=39250;rms=4678
-fr=39300;to=39400;avr=39350;rms=4678
-fr=39400;to=39500;avr=39450;rms=4678
-fr=39500;to=39600;avr=39550;rms=4678
-fr=39600;to=39700;avr=39650;rms=4678
-fr=39700;to=39800;avr=39750;rms=4678
-fr=39800;to=39900;avr=39850;rms=4678
-fr=39900;to=40000;avr=39950;rms=4678
-fr=40000;to=40100;avr=40050;rms=4678
-fr=40100;to=40200;avr=40150;rms=4678
-fr=40200;to=40300;avr=40250;rms=4678
-fr=40300;to=40400;avr=40350;rms=4678
-fr=40400;to=40500;avr=40450;rms=4679
-fr=40500;to=40600;avr=40550;rms=4678
-fr=40600;to=40700;avr=40650;rms=4678
-fr=40700;to=40800;avr=40750;rms=4678
-fr=40800;to=40900;avr=40850;rms=4678
-fr=40900;to=41000;avr=40950;rms=4678
-fr=41000;to=41100;avr=41050;rms=4678
-fr=41100;to=41200;avr=41150;rms=4679
-fr=41200;to=41300;avr=41250;rms=4678
-fr=41300;to=41400;avr=41350;rms=4678
-fr=41400;to=41500;avr=41450;rms=4678
-fr=41500;to=41600;avr=41550;rms=4678
-fr=41600;to=41700;avr=41650;rms=4679
-fr=41700;to=41800;avr=41750;rms=4678
-fr=41800;to=41900;avr=41850;rms=4679
-fr=41900;to=42000;avr=41950;rms=4678
-fr=42000;to=42100;avr=42050;rms=4678
-fr=42100;to=42200;avr=42150;rms=4678
-fr=42200;to=42300;avr=42250;rms=4679
-fr=42300;to=42400;avr=42350;rms=4679
-fr=42400;to=42500;avr=42450;rms=4678
-fr=42500;to=42600;avr=42550;rms=4678
-fr=42600;to=42700;avr=42650;rms=4679
-fr=42700;to=42800;avr=42750;rms=4678
-fr=42800;to=42900;avr=42850;rms=4678
-fr=42900;to=43000;avr=42950;rms=4679
-fr=43000;to=43100;avr=43050;rms=4678
-fr=43100;to=43200;avr=43150;rms=4678
-fr=43200;to=43300;avr=43250;rms=4678
-fr=43300;to=43400;avr=43350;rms=4679
-fr=43400;to=43500;avr=43450;rms=4678
-fr=43500;to=43600;avr=43550;rms=4678
-fr=43600;to=43700;avr=43650;rms=4678
-fr=43700;to=43800;avr=43750;rms=4678
-fr=43800;to=43900;avr=43850;rms=4678
-fr=43900;to=44000;avr=43950;rms=4678
-fr=44000;to=44100;avr=44050;rms=4679
-fr=44100;to=44200;avr=44150;rms=4678
-fr=44200;to=44300;avr=44250;rms=4678
-fr=44300;to=44400;avr=44350;rms=4679
-fr=44400;to=44500;avr=44450;rms=4678
-fr=44500;to=44600;avr=44550;rms=4678
-fr=44600;to=44700;avr=44650;rms=4678
-fr=44700;to=44800;avr=44750;rms=4680
-fr=44800;to=44900;avr=44850;rms=4679
-fr=44900;to=45000;avr=44950;rms=4678
-fr=45000;to=45100;avr=45050;rms=4679
-fr=45100;to=45200;avr=45150;rms=4678
-fr=45200;to=45300;avr=45250;rms=4678
-fr=45300;to=45400;avr=45350;rms=4678
-fr=45400;to=45500;avr=45450;rms=4679
-fr=45500;to=45600;avr=45550;rms=4679
-fr=45600;to=45700;avr=45650;rms=4678
-fr=45700;to=45800;avr=45750;rms=4678
-fr=45800;to=45900;avr=45850;rms=4679
-fr=45900;to=46000;avr=45950;rms=4678
-fr=46000;to=46100;avr=46050;rms=4678
-fr=46100;to=46200;avr=46150;rms=4678
-fr=46200;to=46300;avr=46250;rms=4678
-fr=46300;to=46400;avr=46350;rms=4678
-fr=46400;to=46500;avr=46450;rms=4678
-fr=46500;to=46600;avr=46550;rms=4679
-fr=46600;to=46700;avr=46650;rms=4678
-fr=46700;to=46800;avr=46750;rms=4678
-fr=46800;to=46900;avr=46850;rms=4678
-fr=46900;to=47000;avr=46950;rms=4678
-fr=47000;to=47100;avr=47050;rms=4678
-fr=47100;to=47200;avr=47150;rms=4678
-fr=47200;to=47300;avr=47250;rms=4678
-fr=47300;to=47400;avr=47350;rms=4679
-fr=47400;to=47500;avr=47450;rms=4678
-fr=47500;to=47600;avr=47550;rms=4678
-fr=47600;to=47700;avr=47650;rms=4678
-fr=47700;to=47800;avr=47750;rms=4678
-fr=47800;to=47900;avr=47850;rms=4678
-fr=47900;to=48000;avr=47950;rms=4678
-fr=48000;to=48100;avr=48050;rms=4679
-fr=48100;to=48200;avr=48150;rms=4678
-fr=48200;to=48300;avr=48250;rms=4678
-fr=48300;to=48400;avr=48350;rms=4678
-fr=48400;to=48500;avr=48450;rms=4678
-fr=48500;to=48600;avr=48550;rms=4678
-fr=48600;to=48700;avr=48650;rms=4678
-fr=48700;to=48800;avr=48750;rms=4678
-fr=48800;to=48900;avr=48850;rms=4678
-fr=48900;to=49000;avr=48950;rms=4678
-fr=49000;to=49100;avr=49050;rms=4679
-fr=49100;to=49200;avr=49150;rms=4678
-fr=49200;to=49300;avr=49250;rms=4678
-fr=49300;to=49400;avr=49350;rms=4678
-fr=49400;to=49500;avr=49450;rms=4679
-fr=49500;to=49600;avr=49550;rms=4679
-fr=49600;to=49700;avr=49650;rms=4678
-fr=49700;to=49800;avr=49750;rms=4679
-fr=49800;to=49900;avr=49850;rms=4678
-fr=49900;to=50000;avr=49950;rms=4678
-fr=50000;to=50100;avr=50050;rms=4678
-fr=50100;to=50200;avr=50150;rms=4679
-fr=50200;to=50300;avr=50250;rms=4678
-fr=50300;to=50400;avr=50350;rms=4678
-fr=50400;to=50500;avr=50450;rms=4678
-fr=50500;to=50600;avr=50550;rms=4679
-fr=50600;to=50700;avr=50650;rms=4678
-fr=50700;to=50800;avr=50750;rms=4678
-fr=50800;to=50900;avr=50850;rms=4678
-fr=50900;to=51000;avr=50950;rms=4678
-fr=51000;to=51100;avr=51050;rms=4678
-fr=51100;to=51200;avr=51150;rms=4679
-fr=51200;to=51300;avr=51250;rms=4679
-fr=51300;to=51400;avr=51350;rms=4678
-fr=51400;to=51500;avr=51450;rms=4678
-fr=51500;to=51600;avr=51550;rms=4678
-fr=51600;to=51700;avr=51650;rms=4678
-fr=51700;to=51800;avr=51750;rms=4678
-fr=51800;to=51900;avr=51850;rms=4678
-fr=51900;to=52000;avr=51950;rms=4678
-fr=52000;to=52100;avr=52050;rms=4678
-fr=52100;to=52200;avr=52150;rms=4678
-fr=52200;to=52300;avr=52250;rms=4678
-fr=52300;to=52400;avr=52350;rms=4678
-fr=52400;to=52500;avr=52450;rms=4678
-fr=52500;to=52600;avr=52550;rms=4678
-fr=52600;to=52700;avr=52650;rms=4678
-fr=52700;to=52800;avr=52750;rms=4678
-fr=52800;to=52900;avr=52850;rms=4678
-fr=52900;to=53000;avr=52950;rms=4678
-fr=53000;to=53100;avr=53050;rms=4679
-fr=53100;to=53200;avr=53150;rms=4678
-fr=53200;to=53300;avr=53250;rms=4678
-fr=53300;to=53400;avr=53350;rms=4678
-fr=53400;to=53500;avr=53450;rms=4678
-fr=53500;to=53600;avr=53550;rms=4678
-fr=53600;to=53700;avr=53650;rms=4678
-fr=53700;to=53800;avr=53750;rms=4678
-fr=53800;to=53900;avr=53850;rms=4678
-fr=53900;to=54000;avr=53950;rms=4678
-fr=54000;to=54100;avr=54050;rms=4679
-fr=54100;to=54200;avr=54150;rms=4678
-fr=54200;to=54300;avr=54250;rms=4678
-fr=54300;to=54400;avr=54350;rms=4678
-fr=54400;to=54500;avr=54450;rms=4679
-fr=54500;to=54600;avr=54550;rms=4678
-fr=54600;to=54700;avr=54650;rms=4678
-fr=54700;to=54800;avr=54750;rms=4678
-fr=54800;to=54900;avr=54850;rms=4679
-fr=54900;to=55000;avr=54950;rms=4678
-fr=55000;to=55100;avr=55050;rms=4678
-fr=55100;to=55200;avr=55150;rms=4678
-fr=55200;to=55300;avr=55250;rms=4679
-fr=55300;to=55400;avr=55350;rms=4678
-fr=55400;to=55500;avr=55450;rms=4678
-fr=55500;to=55600;avr=55550;rms=4679
-fr=55600;to=55700;avr=55650;rms=4678
-fr=55700;to=55800;avr=55750;rms=4678
-fr=55800;to=55900;avr=55850;rms=4678
-fr=55900;to=56000;avr=55950;rms=4678
-fr=56000;to=56022;avr=56011;rms=65
----------
-Input_audio\1bdcf42e-1bdb-4058-b9e5-6ee670ec509b.mp3
-fr=0;to=100;avr=50;rms=10
-fr=100;to=200;avr=150;rms=15
-fr=200;to=300;avr=250;rms=23
-fr=300;to=400;avr=350;rms=13
-fr=400;to=500;avr=450;rms=13
-fr=500;to=600;avr=550;rms=12
-fr=600;to=700;avr=650;rms=12
-fr=700;to=800;avr=750;rms=12
-fr=800;to=900;avr=850;rms=23
-fr=900;to=1000;avr=950;rms=118
-fr=1000;to=1100;avr=1050;rms=111
-fr=1100;to=1200;avr=1150;rms=99
-fr=1200;to=1300;avr=1250;rms=1217
-fr=1300;to=1400;avr=1350;rms=3655
-fr=1400;to=1500;avr=1450;rms=1715
-fr=1500;to=1600;avr=1550;rms=77
-fr=1600;to=1700;avr=1650;rms=2173
-fr=1700;to=1800;avr=1750;rms=6013
-fr=1800;to=1900;avr=1850;rms=217
-fr=1900;to=2000;avr=1950;rms=415
-fr=2000;to=2100;avr=2050;rms=182
-fr=2100;to=2200;avr=2150;rms=25
-fr=2200;to=2300;avr=2250;rms=52
-fr=2300;to=2400;avr=2350;rms=48
-fr=2400;to=2500;avr=2450;rms=607
-fr=2500;to=2600;avr=2550;rms=197
-fr=2600;to=2700;avr=2650;rms=2565
-fr=2700;to=2800;avr=2750;rms=713
-fr=2800;to=2900;avr=2850;rms=35
-fr=2900;to=3000;avr=2950;rms=15
-fr=3000;to=3100;avr=3050;rms=13
-fr=3100;to=3200;avr=3150;rms=13
-fr=3200;to=3300;avr=3250;rms=25
-fr=3300;to=3400;avr=3350;rms=21
-fr=3400;to=3500;avr=3450;rms=21
-fr=3500;to=3600;avr=3550;rms=414
-fr=3600;to=3700;avr=3650;rms=25
-fr=3700;to=3800;avr=3750;rms=19
-fr=3800;to=3900;avr=3850;rms=328
-fr=3900;to=4000;avr=3950;rms=33
-fr=4000;to=4100;avr=4050;rms=20
-fr=4100;to=4200;avr=4150;rms=11
-fr=4200;to=4300;avr=4250;rms=18
-fr=4300;to=4400;avr=4350;rms=17
-fr=4400;to=4500;avr=4450;rms=35
-fr=4500;to=4600;avr=4550;rms=20
-fr=4600;to=4700;avr=4650;rms=16
-fr=4700;to=4800;avr=4750;rms=17
-fr=4800;to=4900;avr=4850;rms=14
-fr=4900;to=5000;avr=4950;rms=13
-fr=5000;to=5100;avr=5050;rms=620
-fr=5100;to=5200;avr=5150;rms=630
-fr=5200;to=5300;avr=5250;rms=2966
-fr=5300;to=5400;avr=5350;rms=15
-fr=5400;to=5500;avr=5450;rms=9
-fr=5500;to=5600;avr=5550;rms=2377
-fr=5600;to=5700;avr=5650;rms=7
-fr=5700;to=5800;avr=5750;rms=94
-fr=5800;to=5900;avr=5850;rms=7
-fr=5900;to=6000;avr=5950;rms=7
-fr=6000;to=6090;avr=6045;rms=7
----------
+----- compareSound --------
+    src: fr=101;to=201;rms=31||seek: fr=0;to=100;rms=33 || delta=-2
+    src: fr=201;to=301;rms=3649||seek: fr=100;to=200;rms=3839 || delta=-190
+    src: fr=301;to=401;rms=1645||seek: fr=200;to=300;rms=1730 || delta=-85
+    src: fr=401;to=501;rms=197||seek: fr=300;to=400;rms=229 || delta=-32
+    src: fr=501;to=601;rms=403||seek: fr=400;to=500;rms=425 || delta=-22
+    src: fr=601;to=701;rms=5972||seek: fr=500;to=600;rms=6277 || delta=-305
+    src: fr=701;to=801;rms=1054||seek: fr=600;to=700;rms=1161 || delta=-107
+    src: fr=801;to=901;rms=356||seek: fr=700;to=800;rms=371 || delta=-15
+    src: fr=901;to=1001;rms=243||seek: fr=800;to=900;rms=262 || delta=-19
+    src: fr=1001;to=1101;rms=30||seek: fr=900;to=1000;rms=32 || delta=-2
+    src: fr=1101;to=1201;rms=24||seek: fr=1000;to=1100;rms=25 || delta=-1
+    src: fr=1201;to=1301;rms=61||seek: fr=1100;to=1200;rms=64 || delta=-3
+    src: fr=1301;to=1401;rms=564||seek: fr=1200;to=1300;rms=591 || delta=-27
+    src: fr=1401;to=1501;rms=145||seek: fr=1300;to=1400;rms=162 || delta=-17
+    src: fr=1501;to=1601;rms=2207||seek: fr=1400;to=1500;rms=2319 || delta=-112
+    src: fr=1601;to=1701;rms=1246||seek: fr=1500;to=1600;rms=1319 || delta=-73
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------
+----- compareSound --------

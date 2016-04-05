@@ -7,7 +7,7 @@ Created on Sun Apr  3 20:19:09 2016
 import os
 from pydub import AudioSegment,silence
 from pydub.utils import mediainfo
-
+from math import sqrt
 
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 import matplotlib.pyplot as plt
@@ -106,35 +106,59 @@ def findSegment(srcSeg, seekSeg):
     return []   
     
 '''    
-
-def compareSound(src, msFrom, msTill, seek, step=100):
+#sD=[]
+def findDeviation(src, msFrom, msTill, seek, step=100):
     lenSrcSeg = msTill - msFrom
     lenSeek = len(seek)
     if not src or not seek or lenSeek>lenSrcSeg:
         raise Exception('invalid args')
     l =  lenSrcSeg//step
     r =  lenSrcSeg%step   
-    
-    for i in range(0, l, step):
+    log('----- compareSound --------')
+    llog=[]
+    S2=0
+    for i in range(0, l):
         fr =  int(i*step);
         to = int((i+1)*step) 
         segSrc = src[msFrom+fr:msFrom+to]
-        segSeek= seek[fr, to]
-        if segSrc.rms!=segSeek.rms:
-            return False
-    #TODO:остаток
-    return True    
+        segSeek= seek[fr:to]
+        segSrcRms=segSrc.rms
+        segSeekRms=segSeek.rms
+        #log('cmp')
+        #llog.append('    src: fr={0};to={1};rms={2}||seek: fr={3};to={4};rms={5} || delta={6}'.format(msFrom+fr,msFrom+to, segSrcRms,fr,to, segSeekRms, segSrcRms-segSeekRms))
+        S2+= (segSrcRms-segSeekRms) *(segSrcRms-segSeekRms)      
+        #log('    seek: fr={0};to={1};rms={2}'.format(fr,to, segSeek.rms))
+        #if segSrc.rms!=segSeek.rms:
+        #    return False
+        
+    #if  src[lenSrcSeg-r:lenSrcSeg].rms!=seek[lenSeek-r:lenSeek].rms:
+    #s    return False 
+    #log(' msFrom={0}, msTill={1}, D={2}'.format( msFrom, msTill, sqrt(S2)))  
+    #log("\r\n".join(llog))    
+    #D.append( sqrt(S2))    
+    return sqrt(S2/l)    
     
-def findSound(src, msFrom, msTill, seek):
+def findSound(src, msFrom, msTill, seek, threshHold=200):
     lenSrcSeg = msTill - msFrom
     lenSeek = len(seek)
     if not src or not seek or lenSeek>lenSrcSeg:
         raise Exception('invalid args')
     seekTo = msTill-lenSeek+1
+    D=[]
+    I=[]
     for i in range(msFrom, seekTo):
-        if compareSound(src,i,i+lenSeek,seek):
-            return [i,i+lenSeek]
-    return [] 
+        dev =  findDeviation(src,i,i+lenSeek,seek)
+        D.append(dev)
+        I.append({'from':i,'till':i+lenSeek})        
+        #if findDeviation(src,i,i+lenSeek,seek):
+        #    return [i,i+lenSeek]
+    minD=min(D)    
+    minDIndex = D.index(minD)
+    if minD>threshHold:
+        return []
+    else:
+        return [I[minDIndex]['from'], I[minDIndex]['till']]
+    
 
 def test1():
     src= AudioSegment.from_mp3(r'Input_audio\1bdcf42e-1bdb-4058-b9e5-6ee670ec509b.mp3')
@@ -143,9 +167,38 @@ def test1():
     r = findSound(src, 0, l, seek)
     if r!=[0, l]:
         raise Exception('test1 not passed')
+    print(r)    
     return True    
 
-test1()    
+def test2():
+    src= AudioSegment.from_mp3(r'Output_audio\part_from_join.mp3')
+    l = len(src)
+    seek= AudioSegment.from_mp3(r'Input_audio\1bdcf42e-1bdb-4058-b9e5-6ee670ec509b.mp3')
+    r = findSound(src, 0, l, seek)
+
+    print(r)    
+    return True    
+
+def test3():
+    src= AudioSegment.from_wav(r'Output_audio\part_from_join_short.wav')
+    l = len(src)
+    seek= AudioSegment.from_wav(r'Output_audio\part_from_file.wav')
+    r = findSound(src, 0, l, seek)
+
+    print(min(D))    
+    return True
+    
+def test4():
+    src= AudioSegment.from_wav(r'Output_audio\part_from_join_short.wav')
+    l = len(src)
+    seek= AudioSegment.from_wav(r'Output_audio\part_from_file.wav')
+    fr,till = findSound(src, 0, l, seek)
+    if fr!=101 and till!=1728:
+        raise Exception('Test4 not passed ')
+    print(r)    
+    return True    
+    
+test4()   
    
         
     
