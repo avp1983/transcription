@@ -193,18 +193,22 @@ class Cut(SoundBase):
             if word['stime']>=fr and (word['stime']+word['dur'])<to:
                 text+=word['word']
                 del self.words[index]
-        self.log('file={0}'.format(self.currentFile))
+        self.log('file={0}; from={1}; till={2} '.format(self.currentFile,fr,to))
         self.log(text)
         self.log('--------------')        
         
     def  processFile(self, path):
         self.currentSound = AudioSegment.from_mp3(path)
         self.step =len(self.currentSound)//10 
-        foundSeg = self.findSound(self.joinedSound,  self.currentMs, self.currentMs+len(self.currentSound)*2, self.currentSound)
+        joinedTill= self.currentMs+len(self.currentSound)*2
+        if joinedTill>self.joinedSoundLen:
+            joinedTill=self.joinedSoundLen
+        foundSeg = self.findSound(self.joinedSound,  self.currentMs, joinedTill, self.currentSound)
         if not foundSeg:
             self.log('Sound from file {0} is not found in {1}'.format(path,self.pathToJoined))
             return
         fr,till =  foundSeg
+        #TODO: log D, check interval
         #fr+=self.currentMs
         #to+=self.currentMs
         self.writeWords(fr,till)    
