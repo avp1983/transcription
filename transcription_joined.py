@@ -9,7 +9,7 @@ from pydub import AudioSegment,silence
 from pydub.utils import mediainfo
 import xml.sax
 import pandas as pd
-
+from math import sqrt
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 '''
 def  log(msg):
@@ -89,8 +89,70 @@ class ParseHandler(xml.sax.ContentHandler):
              self.words.append({'word':content.rstrip(), 'stime':self._currentStime,'dur':self._currentDur})
     
 
-class Cut():
+class SoundBase():
+    def __init__(self):
+        self.step=1000
+        self.threshHold=200
+    
+    def findDeviation(self, src, msFrom, msTill, seek):
+        lenSrcSeg = msTill - msFrom
+        lenSeek = len(seek)
+        if not src or not seek or lenSeek>lenSrcSeg:
+            raise Exception('invalid args')
+        l =  lenSrcSeg//self.step
+        r =  lenSrcSeg%self.step   
+        #log('----- compareSound --------')
+        #llog=[]
+        S2=0
+        for i in range(0, l):
+            fr =  int(i*self.step);
+            to = int((i+1)*self.step) 
+            segSrc = src[msFrom+fr:msFrom+to]
+            segSeek= seek[fr:to]
+            segSrcRms=segSrc.rms
+            segSeekRms=segSeek.rms
+            #log('cmp')
+            #llog.append('    src: fr={0};to={1};rms={2}||seek: fr={3};to={4};rms={5} || delta={6}'.format(msFrom+fr,msFrom+to, segSrcRms,fr,to, segSeekRms, segSrcRms-segSeekRms))
+            S2+= (segSrcRms-segSeekRms) *(segSrcRms-segSeekRms)      
+            #log('    seek: fr={0};to={1};rms={2}'.format(fr,to, segSeek.rms))
+            #if segSrc.rms!=segSeek.rms:
+            #    return False
+            
+        #if  src[lenSrcSeg-r:lenSrcSeg].rms!=seek[lenSeek-r:lenSeek].rms:
+        #s    return False 
+        #log(' msFrom={0}, msTill={1}, D={2}'.format( msFrom, msTill, sqrt(S2)))  
+        #log("\r\n".join(llog))    
+        #D.append( sqrt(S2))    
+        return sqrt(S2/l)    
+        
+    def findSound(self, src, msFrom, msTill, seek):
+        lenSrcSeg = msTill - msFrom
+        lenSeek = len(seek)
+        if not src or not seek or lenSeek>lenSrcSeg:
+            raise Exception('invalid args')
+        seekTo = msTill-lenSeek+1
+        D=[]
+        I=[]
+        for i in range(msFrom, seekTo):
+            dev =  self.findDeviation(src,i,i+lenSeek,seek)
+            if dev==0:
+                return [i,i+lenSeek]
+            D.append(dev)
+            I.append({'from':i,'till':i+lenSeek})        
+            #if findDeviation(src,i,i+lenSeek,seek):
+            #    return [i,i+lenSeek]
+        minD=min(D)    
+        minDIndex = D.index(minD)
+        if minD>self.threshHold:
+            return []
+        else:
+            return [I[minDIndex]['from'], I[minDIndex]['till']]
+
+
+
+class Cut(SoundBase):
     def __init__(self,words=[]):
+        SoundBase.__init__(self)
         self.words = words
         self.currentMs=0
         self.joinedSoundLen=0
@@ -122,48 +184,8 @@ class Cut():
             self.processFile(path)
        
     
-    def compareSegments(self, seg1,seg2, step=100):
-        seg1Len = len(seg1)
-        seg2Len = len(seg2)
-        if seg1Len!=seg2Len:
-             raise Exception('invalid args')
-        l =  seg1Len//step
-        for i in range(0,l):
-            fr =  i*step;
-            to = (i+1)*step
-            s1 = seg1[fr:to]
-            s2 = seg2[fr:to]
-            if s1.rms!=s2.rms:
-                return False
-        if  seg1[l*step:seg1Len].rms!=seg2[l*step:seg2Len].rms:
-            return False       
-        return True             
 
-    def findSegment(self,srcSeg, seekSeg):
-        lenSrcSeg = len(srcSeg)
-        lenSeekSeg=len(seekSeg)
-        
-        if not srcSeg or not seekSeg or lenSeekSeg>lenSrcSeg:
-            raise Exception('invalid args')
-        seekTo = lenSrcSeg-lenSeekSeg+1
-        for i in range(seekTo):
-            audio_slice = srcSeg[i:i+lenSeekSeg]
-            if self.compareSegments(audio_slice,seekSeg):
-                return [i,i+lenSeekSeg]
-        return []    
-    
-    def findSegment2(self,srcSeg, seekSeg, fromPos):
-        lenSrcSeg = len(srcSeg)
-        lenSeekSeg=len(seekSeg)
-        
-        if not srcSeg or not seekSeg or lenSeekSeg>lenSrcSeg:
-            raise Exception('invalid args')
-        seekTo = lenSrcSeg-lenSeekSeg+1
-        for i in range(fromPos,seekTo):
-            audio_slice = srcSeg[i:i+lenSeekSeg]
-            if self.compareSegments(audio_slice,seekSeg):
-                return [i,i+lenSeekSeg]
-        return []  
+ 
     
     def writeWords(self,fr,to):
         text=''        
@@ -177,17 +199,18 @@ class Cut():
         
     def  processFile(self, path):
         self.currentSound = AudioSegment.from_mp3(path)
-        foundSeg = self.findSegment(self.joinedSound, self.currentSound)
+        self.step =len(self.currentSound)//10 
+        foundSeg = self.findSound(self.joinedSound,  self.currentMs, self.currentMs+len(self.currentSound)*2, self.currentSound)
         if not foundSeg:
             self.log('Sound from file {0} is not found in {1}'.format(path,self.pathToJoined))
             return
-        fr,to =  foundSeg
+        fr,till =  foundSeg
         #fr+=self.currentMs
         #to+=self.currentMs
-        self.writeWords(fr,to)    
-        self.currentMs = to   
+        self.writeWords(fr,till)    
+        self.currentMs = till+1   
         
-        
+'''        
 def test():
     src =  AudioSegment.from_mp3('Joined.mp3')
     original_bitrate = mediainfo('Joined.mp3')['bit_rate']    
@@ -204,7 +227,7 @@ def test2():
     seek =  AudioSegment.from_mp3(r'Input_audio\1bdcf42e-1bdb-4058-b9e5-6ee670ec509b.mp3')
     c = Cut()
     r = c.findSegment(src, seek)
-    print(r)
+    print(r)'''
 
 def main():
     parser = xml.sax.make_parser()
@@ -218,4 +241,4 @@ def main():
     c.run()
     
    
-test2()   
+main()   
