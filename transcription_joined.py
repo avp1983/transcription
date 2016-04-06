@@ -5,11 +5,14 @@ Created on Sat Apr  2 14:26:01 2016
 @author: lenovo
 """
 import os
+import sys
+import locale
 from pydub import AudioSegment,silence
 from pydub.utils import mediainfo
 import xml.sax
 import pandas as pd
 from math import sqrt
+
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 '''
 def  log(msg):
@@ -86,13 +89,15 @@ class ParseHandler(xml.sax.ContentHandler):
         
     def characters(self, content):    
         if self._curentTag == "Word":
-             self.words.append({'word':content.rstrip(), 'stime':self._currentStime,'dur':self._currentDur})
+             if content.rstrip()!='':
+                 self.words.append({'word':content.rstrip(), 'stime':self._currentStime,'dur':self._currentDur})
     
 
 class SoundBase():
     def __init__(self):
         self.step=1000
         self.threshHold=200
+        self.currFileDev=0
     
     def findDeviation(self, src, msFrom, msTill, seek):
         lenSrcSeg = msTill - msFrom
@@ -136,12 +141,14 @@ class SoundBase():
         for i in range(msFrom, seekTo):
             dev =  self.findDeviation(src,i,i+lenSeek,seek)
             if dev==0:
+                self.currFileDev=0                
                 return [i,i+lenSeek]
             D.append(dev)
             I.append({'from':i,'till':i+lenSeek})        
             #if findDeviation(src,i,i+lenSeek,seek):
             #    return [i,i+lenSeek]
-        minD=min(D)    
+        minD=min(D)
+        self.currFileDev=minD
         minDIndex = D.index(minD)
         if minD>self.threshHold:
             return []
@@ -156,20 +163,20 @@ class Cut(SoundBase):
         self.words = words
         self.currentMs=0
         self.joinedSoundLen=0
-        self.logFile='parser.log'
+        self.logFile='parser5.log'
         self.audioInDir = 'Input_audio'
         self.txtOutDir = 'Output_text'
         self.audioOutDir = 'Output_audio'
         self.noiseOutDir = 'Output_noise'
         self.fileNamesList=pd.read_csv('FileNames.csv')['Name'] 
-        self.pathToJoined='Joined.mp3'
+        self.pathToJoined='test.out.mp3'
         self.joinedSound=[]
         self.currentSound=[]
         self.currentFile=''
    
     def  log(self,msg):
-        f = open(self.logFile, 'a')
-        f.write(msg+"\n")
+        f = open(self.logFile, 'a', encoding='utf-8')
+        f.writelines(msg+'\n')
         f.close()    
     
     def trimExt(self, fileName=''):
@@ -188,13 +195,19 @@ class Cut(SoundBase):
  
     
     def writeWords(self,fr,to):
-        text=''        
+        text='' 
+        #if self.currentFile=='4cd943ad-9405-4378-b8ec-bacb0ca5a298':
+        #    print('debug')
         for index,word in enumerate(self.words):
-            if word['stime']>=fr and (word['stime']+word['dur'])<to:
+            if word['stime']>=fr and (word['stime'])<to:
                 text+=word['word']
-                del self.words[index]
-        self.log('file={0}; from={1}; till={2} '.format(self.currentFile,fr,to))
-        self.log(text)
+                #del self.words[index]
+                #TODO: не надо каждый раз пробегать с начала self.words
+        self.log('file={0}; from={1}; till={2} ;D={3}'.format(self.currentFile,fr,to,self.currFileDev))
+        if text!='':
+            self.log(text)
+        else:
+            self.log('warning! text not found!')
         self.log('--------------')        
         
     def  processFile(self, path):
@@ -208,6 +221,9 @@ class Cut(SoundBase):
             self.log('Sound from file {0} is not found in {1}'.format(path,self.pathToJoined))
             return
         fr,till =  foundSeg
+        if (till-fr)!=len(self.currentSound):
+            raise Exception(' (till-fr)!=len(self.currentSound)')
+        
         #TODO: log D, check interval
         #fr+=self.currentMs
         #to+=self.currentMs
@@ -238,11 +254,25 @@ def main():
     parser.setFeature(xml.sax.handler.feature_namespaces, 0)
     handler = ParseHandler()
     parser.setContentHandler(handler)
-    parser.parse("full.xml")
+    parser.parse("test.out.xml")
     words = handler.words
     
     c = Cut(words)
     c.run()
     
    
-main()   
+def test():
+    print(sys.stdout.encoding)
+    print(sys.stdout.isatty())
+    print(locale.getpreferredencoding())
+    print(sys.getfilesystemencoding())
+    print(os.environ["PYTHONIOENCODING"])    
+    #c = Cut()
+    #c.log(u'\xe1')
+def test2():
+    
+    c = Cut()
+    c.log(u'\xe1')
+   # print(locale.locale_alias)
+    
+main()    
